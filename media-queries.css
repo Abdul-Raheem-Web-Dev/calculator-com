@@ -1,0 +1,75 @@
+/* responsive upto 992px wide screen */
+@media screen and (max-width: 992px)
+{
+    .calculator
+    {
+        width: 40% !important; 
+    }
+}
+
+/* responsive upto 768px wide screen */
+@media screen and (max-width: 768px)
+{
+    .calculator
+    {
+        width: 60% !important; 
+    }
+}
+
+/* responsive upto 576px wide screen */
+@media screen and (max-width: 576px)
+{
+    .calculator
+    {
+        width: 80% !important; 
+    }
+}
+
+/* responsive upto 350px wide screen */
+@media screen and (max-width: 350px)
+{
+    .calculator
+    {
+        width: 100% !important; 
+    }
+    .btn-special-one, .btn-special-two, .btn-special-three, .btn-special-four
+    {
+        width: 45% !important;
+    }
+    .btn-special
+    {
+        flex-wrap: wrap !important;
+    }
+}
+
+/* responsive upto 250px wide screen */
+@media screen and (max-width: 250px)
+{
+    .top
+    {
+        flex-direction: column !important;
+    }
+    .heading
+    {
+        width: 100% !important;
+        margin: 0px !important;
+        text-align: center !important;
+    }
+    .model
+    {
+        display: none !important;
+    }
+    .btn-special-one, .btn-special-two, .btn-special-three, .btn-special-four
+    {
+        
+        width: 100% !important;
+    }
+    .bottom
+    {
+        flex-direction: column !important;
+    }
+    .credit
+    {
+        width: 100% !important;
+    }
+}

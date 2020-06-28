@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <!-- main div start -->
+    <div class="main">
+        <!-- calculator start -->
+        <div class="calculator">
+            
+            <!-- top start -->
+            <div class="top">
+                <!-- heading & model start -->
+                <div class="heading">
+                    <h2>Calculator</h2>
+                </div>
+                <div class="model">
+                    <h2>R-0000</h2>
+                </div>
+                <!-- heading & model end -->
+            </div>
+            <!-- top end -->
+
+            <!-- screen start -->
+            <div class="screen">
+                <input type="text" class="screen-area" id="output">
+            </div>
+             <!-- screen end -->
+
+            <!-- keypad start -->
+            <div class="keypad">
+                <div class="btn-row btn-special">
+                    <button class="btn-special-one btn-similarity" onclick="disableInput()">OFF</button>
+                    <button class="btn-special-two btn-similarity" onclick="enableInput()">ON</button>
+                    <button class="btn-special-three btn-similarity" onclick="clearInput()">C</button>
+                    <button class="btn-special-four btn-similarity" onclick="clearLastInput()">X</button>
+                </div>
+                <div class="btn-row">
+                    <button class="btn btn-similarity" onclick="screenInput('7')">7</button>
+                    <button class="btn btn-similarity" onclick="screenInput('8')">8</button>
+                    <button class="btn btn-similarity" onclick="screenInput('9')">9</button>
+                    <button class="btn btn-similarity" onclick="screenInput('/')">/</button>
+                </div>
+                <div class="btn-row">
+                    <button class="btn btn-similarity" onclick="screenInput('4')">4</button>
+                    <button class="btn btn-similarity" onclick="screenInput('5')">5</button>
+                    <button class="btn btn-similarity" onclick="screenInput('6')">6</button>
+                    <button class="btn btn-similarity" onclick="screenInput('*')">*</button>
+                </div>
+                <div class="btn-row">
+                    <button class="btn btn-similarity" onclick="screenInput('1')">1</button>
+                    <button class="btn btn-similarity" onclick="screenInput('2')">2</button>
+                    <button class="btn btn-similarity" onclick="screenInput('3')">3</button>
+                    <button class="btn btn-similarity" onclick="screenInput('-')">-</button>
+                </div>
+                <div class="btn-row">
+                    <button class="btn btn-similarity" onclick="screenInput('.')">.</button>
+                    <button class="btn btn-similarity" onclick="screenInput('0')">0</button>
+                    <button class="btn btn-similarity" onclick="calculateInput()">=</button>
+                    <button class="btn btn-similarity" onclick="screenInput('+')">+</button>
+                </div>
+            </div>
+            <!-- keypad end -->
+
+            <!-- bottom start -->
+            <div class="bottom">
+                <!-- credit start -->
+                <div class="credit">
+                    <h4>Developed by</h4>
+                </div>
+                <div class="credit">
+                    <h4><span>Abdul Raheem</span></h4>
+                </div>
+                <!-- credit end -->
+            </div>
+            <!-- bottom end -->
+
+        </div>
+        <!-- calculator End -->
+    </div>
+    <!-- main div end -->
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>
